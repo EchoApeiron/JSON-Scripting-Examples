@@ -45,6 +45,3 @@ def addItemToStock(data, category, price, stocked, name):
 
     data.append(newItem)
     return data
-
-data = loadJSONfromFile('data.json')
-print(getStockByCategoryAndStatus(data, 'Sporting Goods', False))
