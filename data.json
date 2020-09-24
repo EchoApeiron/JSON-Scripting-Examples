@@ -1,0 +1,68 @@
+[
+    {
+        "category": "Sporting Goods",
+        "name": "Football",
+        "price": "$49.99",
+        "stocked": true
+    },
+    {
+        "category": "Sporting Goods",
+        "name": "Baseball",
+        "price": "$9.99",
+        "stocked": false
+    },
+    {
+        "category": "Electronics",
+        "name": "iPod Touch",
+        "price": "$99.99",
+        "stocked": true
+    },
+    {
+        "category": "Electronics",
+        "name": "PS5",
+        "price": "$499.99",
+        "stocked": false
+    },
+    {
+        "category": "Electronics",
+        "name": "Xbox Series X",
+        "price": "$499.99",
+        "stocked": false
+    },
+    {
+        "category": "Electronics",
+        "name": "iPhone",
+        "price": "$899.99",
+        "stocked": true
+    },
+    {
+        "category": "Electronics",
+        "name": "Samsung Galaxy S20",
+        "price": "$799.99",
+        "stocked": true
+    },
+    {
+        "category": "Sporting Goods",
+        "name": "Tennis Balls",
+        "price": "$9.99",
+        "stocked": true
+    },
+    {
+        "category": "Sporting Goods",
+        "name": "Golf Balls",
+        "price": "$9.99",
+        "stocked": true
+    },
+    {
+        "category": "Sporting Goods",
+        "name": "Bouncy Balls",
+        "price": "$9.99",
+        "stocked": true
+    },
+    {
+        "category": "Sporting Goods",
+        "name": "Darts",
+        "price": "$9.99",
+        "stocked": true
+    }
+]
