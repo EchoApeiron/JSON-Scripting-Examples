@@ -10,6 +10,16 @@ def writeJSONtoFile(file, data):
     with open(file, 'w') as jsonfile:
         json.dump(data, jsonfile, indent=4, sort_keys=True)
 
+def stockItem(category, price, name, stocked):
+    newItem = {
+        "category" : category,
+        "price" : price,
+        "stocked" : stocked,
+        "name" : name
+    }
+
+    return newItem
+
 
 def getStockByCategory(data, category):
     stock = []
@@ -34,14 +44,3 @@ def getStockByCategoryAndStatus(data, category, status = True):
     stock = getStockByStatus(stock, status)
             
     return stock
-
-def addItemToStock(data, category, price, stocked, name):
-    newItem = {
-        "category" : category,
-        "price" : price,
-        "stocked" : stocked,
-        "name" : name
-    }
-
-    data.append(newItem)
-    return data

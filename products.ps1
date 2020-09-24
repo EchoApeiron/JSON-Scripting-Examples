@@ -12,6 +12,21 @@ function Write-JSONtoFile {
     $Data | ConvertTo-Json | Out-File $file
 }
 
+function New-StockItem {
+    param([String]$Category, [String]$Name, [String]$Price, [Boolean]$Status)
+
+    $itemProperties = @{
+        "category" = $Category
+        "name" = $Name
+        "price" = $Price
+        "stocked" = $Status 
+    }
+
+    $newItem = New-Object psobject -Property $itemProperties; $newItem
+
+    return $newItem
+}
+
 function Get-StockByCategory {
     param([Object]$Data, [String]$Category)
 
@@ -47,20 +62,4 @@ function Get-StockByCategoryAndStatus {
     $stock = Get-StockByStatus -Data $stock -Status $status
      
     return $stock 
-}
-
-function Add-StockItem {
-    param([Object]$Data, [String]$Category, [String]$Name, [String]$Price, [Boolean]$Status)
-
-    $itemProperties = @{
-        "category" = $Category
-        "name" = $Name
-        "price" = $Price
-        "stocked" = $Status 
-    }
-
-    $newItem = New-Object psobject -Property $itemProperties; $newItem
-    $Data += $newItem
-
-    return $Data
 }
