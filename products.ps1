@@ -9,7 +9,7 @@ function Get-JSONfromFile {
 function Write-JSONtoFile {
     param([String]$File, [Object]$Data)
 
-    $Data | ConvertTo-Json | Out-File $file
+    $Data | ConvertTo-Json | Out-File $File
 }
 
 function New-StockItem {
@@ -58,8 +58,8 @@ function Get-StockByStatus {
 function Get-StockByCategoryAndStatus {
     param([Object]$Data, [String]$Category, [Boolean]$Status)
 
-    $stock = Get-StockByCategory -Data $data -Category $Category
-    $stock = Get-StockByStatus -Data $stock -Status $status
+    $stock = Get-StockByCategory -Data $Data -Category $Category
+    $stock = Get-StockByStatus -Data $stock -Status $Status
      
     return $stock 
 }
